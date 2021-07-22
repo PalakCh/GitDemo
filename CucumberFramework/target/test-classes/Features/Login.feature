@@ -23,14 +23,7 @@ Feature: Application Login
   @tag1
   Scenario: Home Page Default Login
     Given User is on the Netbanking login page
-    When User login the application with "ABC" and password "123"
-    Then Home page is populated
-    And Cards are displayed
-    
-      @tag1
-  Scenario: Home Page Default Login
-    Given User is on the Netbanking login page
-    When User login the application with "ABCD" and password "12345"
+    When User login the application with username and password
     Then Home page is populated
     And Cards are displayed
 
